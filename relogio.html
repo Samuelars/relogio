@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RELÓGIO</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .title {
+            font-size: 20px;
+            position: absolute;
+            top: 20px;
+            color: white;
+        }
+
+        .h {
+            color: white;
+            font-size: 12px;
+            position: absolute;
+            top: 60%;
+            left: 70px;    
+        }
+
+        .min {
+            font-size: 12px;
+            position: absolute;
+            top: 60%;
+            color: white;  
+        }
+
+        .seg {
+            font-size: 12px;
+            position: absolute;
+            top: 60%;
+            right: 55px;
+            color: white;    
+        }
+
+        #relogio {
+            background: linear-gradient(to right, #5b88a5, #d4cdc5);
+            font-family: Arial, Helvetica, sans-serif;
+            width: 400px;
+            height: 200px;
+            border-radius: 10px;
+            box-shadow: -2px 2px 3px rgba(0, 0, 0, 0.356);
+            /*centralizando a div*/
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            /*centralizando span*/
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        #hora {
+            background: linear-gradient(to left, orange, #243a69);
+            color: white;
+            width: 50px;
+            padding: 30px;
+            margin-right: 5px;
+            text-align: center;
+            font-size: 30px;
+            border-radius: 4px;
+        }
+
+        #minuto {
+            background-color: orange;
+            color: white;
+            width: 50px;
+            padding: 30px;
+            margin-right: 5px;
+            text-align: center;
+            font-size: 30px;
+            border-radius: 4px;
+        }
+
+        #segundo {
+            background-color: orange;
+            color: white;
+            width: 50px;
+            padding: 30px;
+            text-align: center;
+            font-size: 30px;
+            border-radius: 4px;
+        }
+
+    </style>
+<body>
+    <div id="relogio">
+        <h1 class="title">RELÓGIO DIGITAL</h1>
+        <span id="hora" id="tempo">00</span>
+        <p class="h">HORA</p>
+        <span id="minuto" id="tempo">00</span>
+        <p class="min">MINUTO</p>
+        <span id="segundo" id="tempo">00</span>
+        <p class="seg">SEGUNDO</p>
+    </div>
+    
+    <script src="relogio.js"></script>
+
+</body>
+</html>
